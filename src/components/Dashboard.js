@@ -1,9 +1,10 @@
 import { Fragment } from "react";
 
-const Dashboard = () => {
+const Dashboard = ({setAuth}) => {
   return(
     <Fragment>
-      Dashboard
+      <h1>Dashboard</h1>
+      <button onClick={() => setAuth(false)}>UN-Authenticate</button>
     </Fragment>
   );
 }

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-const Register = () => {
+const Register = ({setAuth}) => {
   return(
     <Fragment>
       Register
