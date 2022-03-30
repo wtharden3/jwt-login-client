@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 
 const Login = () => {
-  <Fragment>
-    Login
-  </Fragment>
+  return(
+    <div>
+      <p>Login</p>
+    </div>
+  )
 }
 
 export default Login;

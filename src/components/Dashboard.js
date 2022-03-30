@@ -5,7 +5,7 @@ const Dashboard = () => {
     <Fragment>
       Dashboard
     </Fragment>
-  )
+  );
 }
 
 export default Dashboard;

@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 
 const Register = () => {
-  <Fragment>
-    Register
-  </Fragment>
+  return(
+    <Fragment>
+      Register
+    </Fragment>
+  );
 }
 
 export default Register;
