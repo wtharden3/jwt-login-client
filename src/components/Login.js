@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-const Login = ({setAuth}) => {
+const Login = ({setAuth, setToken}) => {
   return(
     <div>
       <p>Login</p>

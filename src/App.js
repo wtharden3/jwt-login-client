@@ -13,12 +13,13 @@ import Dashboard from './components/Dashboard';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
+  const [token, setToken] = useState('');
 
   const setAuth = boolean => {
     setIsAuth(boolean);
   }
   return (
-    <div className="App">
+    <div className="App container">
       <Router>
         <h1>Home</h1>
         <nav>
@@ -31,9 +32,9 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<div>Home</div>}></Route>
-          <Route path="/login" element={isAuth ? <Navigate replace to="/dashboard" /> : <Login setAuth={setAuth}/>} />
-          <Route path="/register" element={<Register setAuth={setAuth} />} />
-          <Route path="/dashboard" element={isAuth ? <Dashboard setAuth={setAuth}/> : <Navigate replace to="/login" />} />
+          <Route path="/login" element={isAuth ? <Navigate replace to="/dashboard" /> : <Login setAuth={setAuth} setToken={setToken}/>} />
+          <Route path="/register" element={<Register setAuth={setAuth} token={token} setToken={setToken}/>} />
+          <Route path="/dashboard" element={isAuth ? <Dashboard token={token} setToken={setToken}/> : <Navigate replace to="/login" />} />
         </Routes>
       </Router>
     </div>
