@@ -67,7 +67,7 @@ const Register = ({setAuth, token, setToken}) => {
           onChange={e => setPassword(e.target.value)}
           className="form-control my-3"
         />
-        <input className="btn btn-primary" type="submit" value="submit" />
+        <input className="btn btn-primary w-100" type="submit" value="submit" />
       </form>
     </Fragment>
   );
